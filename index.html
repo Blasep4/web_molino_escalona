@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Agency - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <script>
+        function calcularPrecio() {
+            var cantidad = document.getElementById("cantidad").value;
+            var peso = document.getElementById("peso").value;
+            var precio = cantidad * peso / 1.20;
+            document.getElementById("precio").innerHTML = precio.toFixed(2);
+        }
+    </script>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand " href="#page-top">Molino Escalona</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#recetas">Sabores de molino</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">¿Necesitas ayuda?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">En nuestra página de harina, te invitamos a descubrir la diferencia que hace un ingrediente de calidad en todas tus preparaciones. ¡Bienvenido!</div>
+                <div class="masthead-heading text-uppercase" style="font-size: 50px;">¿Te gustaria conocernos?</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#about">Cuentame Mas</a>
+            </div>
+        </header>
+        <!-- Services-->
+       <section class="page-section" id="services">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Servicios</h2>
+            <h3 class="section-subheading text-muted" style="font-size:14px;"> Descubre nuestras opciones de envío y entrega para que puedas recibir tus productos en la comodidad de tu hogar.</h3>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-shipping-fast fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Del molino a tu casa</h4>
+                <p class="text-muted">disfruta de la autenticidad de nuestras harinas molidas en molino de piedra en la comodidad de tu hogar.</p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-secondary btn-block">Saber más</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-warning"></i>
+                    <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Por envio</h4>
+                <p class="text-muted">"¿No tienes tiempo para visitar nuestro Molino? ¡No hay problema! Ahora puedes hacer tus pedidos cómodamente desde casa y recibirlos directamente en la puerta de tu hogar</p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-secondary btn-block">Saber más</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-shopping-bag fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Ven a recogerlo</h4>
+                <p class="text-muted">
+                    ¡Recoge tus pedidos en nuestra tienda y ahorra tiempo! Ofrecemos un servicio de recogida rápido y conveniente para que puedas obtener tus productos</p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-secondary btn-block">Saber más</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Nuestros productos</h2>
+                    <h3 class="section-subheading text-muted"style="font-size=5px">Descubre nuestra selección de harinas artesanales, elaboradas con los mejores granos y molidas en molino de piedra para una textura y sabor únicos.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="img/tienda1.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Harina Morena</div>
+                                <div class="portfolio-caption-subheading text-muted">Nuestra harina morena es ideal para la preparación de panes rústicos y otros productos horneados que requieren una textura y sabor más pronunciados.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="/img/tienda2.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Harina Integral</div>
+                                <div class="portfolio-caption-subheading text-muted" style="font-size: 15px;">Nuestra harina integral es perfecta para crear panes y productos horneados. Con su alto contenido de fibra y vitaminas , es una opción saludable y nutritiva para tus preparacione</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="img/tienda3.jpg" alt="..."style="height: 240px;;">
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Harina Celiacos</div>
+                                <div class="portfolio-caption-subheading text-muted">Nuestra harina para celiacos es la opción perfecta para aquellos que buscan una alternativa sin gluten en sus preparaciones</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="img/tienda4.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Harina Espelta</div>
+                                <div class="portfolio-caption-subheading text-muted">Nuestra harina de espelta es una opción excelente para aquellos que buscan una alternativa más nutritiva y saludable en sus preparaciones de cocina.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="img/tienda5.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Harina Maiz</div>
+                                <div class="portfolio-caption-subheading text-muted">Nuestra harina de maíz es una opción ideal para aquellos que buscan añadir un sabor auténtico a sus recetas de cocina</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="img/tienda6.jpg" alt="..." / style="width: 360px; height: 240px;">
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Harina Garbanzo</div>
+                                <div class="portfolio-caption-subheading text-muted">Nuestra harina de garbanzo es una alternativa saludable y deliciosa para aquellos que buscan una opción libre de gluten y rica en proteínas. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <!-- Recetas-->
+
+        <section class="page-section" id="recetas">
+            <div class="container">
+              <div class="text-center">
+                <h2 class="section-heading text-uppercase"> Nuestras Recetas</h2>
+                <h3 class="section-subheading text-muted">Descubre nuestras deliciosas recetas con nuestras harinas de molino.</h3>
+              </div>
+              <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100 text-center">
+                <img class="card-img-top" src="img/receta1.jpg" alt="">
+                <div class="card-body">
+                  <h4 class="card-title">Pan de trigo integral</h4>
+                  <div class="embed-responsive embed-responsive-16by9 rounded">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/O1v8f8hCVXE" allowfullscreen></iframe>
+                  </div>
+                  <p class="card-text">Esta receta de pan de trigo integral es ideal para aquellos que prefieren una opción más saludable y nutritiva.</p>
+                  <a href="#" class="btn btn-primary">Ver receta</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 text-center">
+                  <img class="card-img-top" src="img/receta2.jpg" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Galletas de avena</h4>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/U2LiQ1JjXe8" allowfullscreen></iframe>
+                    </div>
+                    <p class="card-text">Estas galletas de avena son perfectas para el desayuno o como snack saludable durante el día.</p>
+                    <a href="#" class="btn btn-primary">Ver receta</a>
+                </div>
+            </div>
+            </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100 text-center">
+                    <img class="card-img-top" src="img/receta3.jpg" alt="">
+                    <div class="card-body">
+                      <h4 class="card-title">Pizza casera</h4>
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1BYHdXjjufU" allowfullscreen></iframe>
+                      </div>
+                      <p class="card-text">Aprende a hacer una deliciosa pizza casera con nuestra harina de trigo.</p>
+                      <a href="#" class="btn btn-primary">Ver receta</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+          </section>
+           <!-- About-->
+          <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">¡Ven y conoce nuestra historia!</h2>
+                    <h3 class="section-subheading text-muted">Cómo un sueño se convirtió en realidad.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>10 de diciembre de 1768</h4>
+                                <h4 class="subheading">El inicio de todo</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted"> Manuel Morillo Morales adquiere el molino y lo restaura. Anteriormente, el molino había pertenecido a un presbítero llamado José Rodríguez Pajares, párroco de Los Barrios</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>27 de febrero de 1840</h4>
+                                <h4 class="subheading">Manos a la masa</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Francisco de la Peña, administrador de los bienes de Juana Morilla y de Juan Morillo, hijo y otros herederos de Fernando Morillo, arrendan el molino a José Guijón.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>30 de junio de 1879:</h4>
+                                <h4 class="subheading">Desesperación</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Teresa Morales acude al Juzgado para vender el molino en pública subasta por encontrarse en ruina y éste se remata a favor de Juana García Vázquez por 1.000 pesetas.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>3 de marzo de 1896</h4>
+                                <h4 class="subheading">El futuro del molino</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Juana García Vázquez vende el molino a Manuel Domínguez Medina por 3.500 pesetas y una renta vitalicia de 1 peseta diaria.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>17 de octubre de 1900</h4>
+                                <h4 class="subheading">Nueva Era</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Fallece Manuel Domínguez, sin testar, por lo que fueron declarados herederos abintestato sus hijos Juan, Manuel, María de la Concepción y Olimpia Domínguez Pérez, todos menores de edad.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>1908</h4>
+                                <h4 class="subheading">El comienzo de algo grande</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Blas Escalona Villalva arrienda el molino y al cabo de los años acaba por adquirirlo a la empresa británica Water Company.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Únete a nosotros y 
+                            
+                                sé parte
+            
+                                de la historia
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- equipo-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Conoce al equipo detrás de nuestra pasión</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <h4>Blas</h4>
+                            <p class="text-muted">Jefe</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fas fa-phone"></i>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="far fa-envelope"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <h4>Efren</h4>
+                            <p class="text-muted">Encargado</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fas fa-phone"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="far fa-envelope"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <h4>Larry Parker</h4>
+                            <p class="text-muted">Programador</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Contactar-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">¿Hablamos?</h2>
+                    <h3 class="section-subheading text-muted">Contáctanos y déjanos ayudarte a resolver cualquier pregunta o duda que tengas</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <!-- Name input-->
+                          <input class="form-control" id="name" type="text" placeholder="Nombre *" data-sb-validations="required" />
+                          <div class="invalid-feedback" data-sb-feedback="name:required">Nombre</div>
+                        </div>
+                        <div class="form-group">
+                          <!-- Email address input-->
+                          <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                          <div class="invalid-feedback" data-sb-feedback="email:required">Gmail</div>
+                          <div class="invalid-feedback" data-sb-feedback="email:email">El gmail no es valido</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                          <!-- Phone number input-->
+                          <input class="form-control" id="phone" type="tel" placeholder="Telefono *" data-sb-validations="required" />
+                          <div class="invalid-feedback" data-sb-feedback="phone:required">Necesitas un telefono valido</div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                          <!-- Message input-->
+                          <textarea class="form-control" id="message" placeholder="Escribe aqui cualquier cosa que quieras decirnos" data-sb-validations="required"></textarea>
+                          <div class="invalid-feedback" data-sb-feedback="message:required">Necesitas Escribir un mensaje</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Submit Button-->
+                    <div class="text-center">
+                      <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Enviar</button>
+                    </div>
+                  </form>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Molino Escalona</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter">   <i class="fas fa-phone"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook">  <i class="fab fa-whatsapp"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn">   <i class="far fa-envelope"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">política de privacidad</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terminos de uso</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <div class="container mt-5">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="row mb-3">
+                                                    <div class="col-6">Cantidad:</div>
+                                                    <div class="col-6">
+                                                        <select class="form-select" id="cantidad" onchange="calcularPrecio()">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-6">Peso:</div>
+                                                    <div class="col-6">
+                                                        <select class="form-select" id="peso" onchange="calcularPrecio()">
+                                                            <option value="25">25 KG</option>
+                                                            <option value="35">35 KG</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-6">Precio:</div>
+                                                    <div class="col-6" id="precio">20.83</div>
+                                                </div>
+                                                <button class="btn btn-primary" style="margin-left: 100px;">Comprar</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="img/tienda1.jpg" alt="Producto" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">aa</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Explore
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Graphic Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Finish
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Identity
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">aaae</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Lines
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Branding
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">aaa</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Southwest
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Website Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">aaaa</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Window
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Photography
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
